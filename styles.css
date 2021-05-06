@@ -1,0 +1,87 @@
+body {
+  font-size: 15px;
+  padding: 3rem 1rem;
+  margin: 0;
+  background: #f2f2f2;
+}
+
+.container {
+  border-radius: 6px;
+}
+
+.card {
+  color: #f2f2f2;
+  padding: 1.5rem;
+  font-size: 16px;
+}
+.card h2 {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+}
+.card p, .card a {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+}
+.card a {
+  background: #f2f2f2;
+  padding: 1rem;
+  margin: 2rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin: 2rem 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.card-sedan {
+  background: #e38826;
+  border-radius: 6px 6px 0 0;
+}
+.card-sedan a {
+  color: #e38826;
+  border: 1px solid #e38826;
+}
+.card-sedan a:hover {
+  color: #f2f2f2;
+  background: #e38826;
+  border: 1px solid #f2f2f2;
+}
+
+.card-suv {
+  background: #006970;
+}
+.card-suv a {
+  color: #006970;
+  border: 1px solid #006970;
+}
+.card-suv a:hover {
+  color: #f2f2f2;
+  background: #006970;
+  border: 1px solid #f2f2f2;
+}
+
+.card-luxury {
+  background: #004241;
+  border-radius: 0 0 6px 6px;
+}
+.card-luxury a {
+  color: #004241;
+  border: 1px solid #004241;
+}
+.card-luxury a:hover {
+  color: #f2f2f2;
+  background: #004241;
+  border: 1px solid #f2f2f2;
+}
+
+@media (min-width: 375px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

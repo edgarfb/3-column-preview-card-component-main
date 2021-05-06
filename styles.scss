@@ -1,0 +1,105 @@
+// fonts
+$big-shoulders: 'Big Shoulders Display', cursive;
+$lexend-deca: 'Lexend Deca', sans-serif;
+
+
+// colors
+$orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$light-gray: hsl(0, 0%, 95%);
+$trans-white: hsla(0, 0%, 100%, 0.75);
+
+
+body {
+    font-size: 15px;
+    padding: 3rem 1rem;
+    margin: 0;
+    background: hsl(0, 0%, 95%);
+}
+
+.container {
+    border-radius: 6px;
+    // TODO
+    // need to fix the border-radius for the container
+}
+
+.card {
+    color: hsl(0, 0%, 95%);
+    padding: 1.5rem;
+    font-size: 16px;
+    h2 {
+        color: $light-gray;
+        text-transform: uppercase;
+        font-family: $big-shoulders;
+    }
+    p, a {
+        color:$trans-white;
+        font-family: $lexend-deca;
+        font-size: 14px;
+    }
+    a {
+        background: $light-gray;
+        padding: 1rem;
+        margin: 2rem 0;
+
+
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        margin: 2rem 0;
+        display: inline-block;
+        text-decoration: none;
+    }
+}
+
+
+.card-sedan {
+    background: $orange;
+    border-radius: 6px 6px 0 0;
+    a {
+        color: $orange;
+        border: 1px solid $orange;
+    }
+    a:hover {
+        color: $light-gray;
+        background: $orange;
+        border: 1px solid $light-gray;
+    }
+}
+
+.card-suv {
+    background: $dark-cyan;
+    a {
+        color: $dark-cyan;
+        border: 1px solid $dark-cyan;
+    }
+    a:hover {
+        color: $light-gray;
+        background: $dark-cyan;
+        border: 1px solid $light-gray;
+    }
+}
+
+.card-luxury {
+    background: $very-dark-cyan;
+    border-radius: 0 0 6px 6px;
+    a {
+        color: $very-dark-cyan;
+        border: 1px solid $very-dark-cyan;
+    }
+    a:hover {
+        color: $light-gray;
+        background: $very-dark-cyan;
+        border: 1px solid $light-gray;
+    }
+    
+}
+
+
+@media (min-width: 375px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+    }
+}
